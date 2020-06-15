@@ -1,8 +1,3 @@
-<%-- 
-    Document   : crearCategoria
-    Created on : 11/06/2020, 02:28:05 PM
-    Author     : PC
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--Para importar datos de la clase categoria-->
@@ -23,7 +18,7 @@
     <body>
         <%@include file="../WEB-INF/Vistas-Parciales/encabezado.jspf"%>
         <h1>MANTENIMIENTO CATEGORIAS</h1>
-        <form class="form-horizontal" id="frmCategoria" name="frmCategoria" action="<%= request.getContextPath()%>/categorias" method="post" >
+        <form class="form-horizontal" id="frmCategoria" name="frmCategoria" action="<%= request.getContextPath()%>/categorias.do" method="post" >
             <input type="hidden" name="id_categoria" value="<%=categoria.getId_categoria()%>"/>
             <div class="form-group">
                 <label for="txtNomCategoria" class="col-sm-2 control-label">NOMBRE: </labe>
